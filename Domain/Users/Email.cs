@@ -11,6 +11,7 @@ public sealed record Email
 	public string Value { get;}
 
 	//static factory method to create email
+	//Return Result type
 	public static Result<Email> Create(string? email)
 	{
 		Ensure.NotNullOrEmpty(email);
