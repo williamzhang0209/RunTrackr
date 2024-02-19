@@ -23,6 +23,7 @@ public sealed class User : Entity
 	//static method to create user entity.
 	//have more control to create user entity
 	//Static Factory Pattern
+	//updated
 	public static User Create(Email email, Name name, bool hasPublicProfile)
 	{
 		var user = new User(Guid.NewGuid(), email, name, hasPublicProfile);
